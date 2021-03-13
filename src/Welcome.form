@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Welcome">
+  <grid id="27dc6" binding="JPanelMain" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="41" y="27" width="479" height="183"/>
+    </constraints>
+    <properties/>
+    <border type="none" title="Sort">
+      <font/>
+      <title-color color="-4473925"/>
+    </border>
+    <children>
+      <component id="4be00" class="javax.swing.JTextField" binding="textFieldWelcome">
+        <constraints/>
+        <properties>
+          <text value="Welcome ! Please chose the options:"/>
+        </properties>
+      </component>
+      <component id="e5715" class="javax.swing.JComboBox" binding="comboBoxAlgo">
+        <constraints/>
+        <properties>
+          <model/>
+        </properties>
+      </component>
+      <component id="3f172" class="javax.swing.JTextField" binding="TextFieldAlgo">
+        <constraints/>
+        <properties>
+          <text value="Desired sorting algorithm "/>
+        </properties>
+      </component>
+      <component id="f424" class="javax.swing.JTextField" binding="textFieldMethodofElementInsertion">
+        <constraints/>
+        <properties>
+          <text value="How would you like to enter the elements"/>
+        </properties>
+      </component>
+      <component id="8f61" class="javax.swing.JComboBox" binding="comboBoxMethodofInsertion">
+        <constraints/>
+        <properties/>
+      </component>
+    </children>
+  </grid>
+</form>
