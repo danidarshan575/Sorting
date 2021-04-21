@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.sql.SQLOutput;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -137,6 +138,7 @@ public class BaseFrame extends javax.swing.JFrame {
             // For logging onto the console.
             System.out.println("The input number is set to :" + d.getNoOfNumbers());
             System.out.println("The selected sort type is:" + d.getSort());
+            writeToConsole();
         }
 
     }
@@ -191,6 +193,23 @@ public class BaseFrame extends javax.swing.JFrame {
         System.out.println("Randomly generated array is:" + Arrays.toString(a));
         d.setInput(a);
 
+
+    }
+
+    public void writeToConsole(){
+        Data d = new Data();
+        System.out.println("Here are the runtimes of all the sorts: \n");
+        Sorts s = new Sorts();
+        s.heapSort(d.getInput());
+        System.out.println("Heapsort:"+ d.getTimeofExecution());
+        s.quickSort3med(d.getInput());
+        System.out.println("Quick sort 3 med:"+ d.getTimeofExecution());
+        s.insertionSort(d.getInput());
+        System.out.println("Insertion sort:"+ d.getTimeofExecution());
+        s.selectionSort(d.getInput());
+        System.out.println("selection sort:"+ d.getTimeofExecution() );
+        s.bubbleSort(d.getInput());
+        System.out.println("Bubble sort:"+ d.getTimeofExecution());
 
     }
 
